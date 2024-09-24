@@ -21,5 +21,5 @@ WORKDIR /app
 # Copy the built application to the final image
 COPY --from=build /app/target/*.jar app.jar
 
-EXPOSE 2424
+EXPOSE 8080
 CMD ["java", "-jar", "app.jar"]
